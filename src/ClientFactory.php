@@ -33,7 +33,7 @@ class ClientFactory
     {
         $soapClient = new \SforcePartnerClient;
         $soapClient->createConnection($this->wdsl);
-        $$soapClient->login($this->username, $this->password);
+        $soapClient->login($this->username, $this->password);
         return $soapClient;
     }
 
