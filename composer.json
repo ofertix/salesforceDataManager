@@ -1,0 +1,29 @@
+
+{
+    "name": "jcxk/salesforce-data-manager",
+    "type": "library",
+    "license": "Apache-2.0",
+    "description": "Salesforce Data manager lib, wrapping bulkapliclient and soapclient",
+    "keywords": ["salesforce", "force"],
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "juan carlos escamilla",
+            "homepage": "http://indev.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "league/csv": "^8.0",
+        "subdee/salesforce-bulk-api-client": "dev-master",
+        "developerforce/force.com-toolkit-for-php": "dev-master"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "SalesForceDataManager\\": "src/"
+        }
+    }
+
+}
