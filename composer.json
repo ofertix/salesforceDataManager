@@ -16,7 +16,6 @@
     "require": {
         "php": ">=5.4",
         "league/csv": "^8.0",
-        "subdee/salesforce-bulk-api-client": "dev-master",
         "developerforce/force.com-toolkit-for-php": "dev-master"
     },
 

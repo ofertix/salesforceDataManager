@@ -43,7 +43,7 @@ class ClientFactory
     public function getBulkApiClient()
     {
         $soapclient = $this->getSoapClient();
-        return new \BulkApiClient(
+        return new BulkApiClient(
             $soapclient->getLocation(),
             $soapclient->getSessionId()
         );

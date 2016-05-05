@@ -9,7 +9,7 @@ class DataManager
     public $client;
 
     public function __construct(
-        \BulkApiClient $bulkapiClient
+        BulkApiClient $bulkapiClient
     ) {
         $this->client = $bulkapiClient;
     }
@@ -18,10 +18,10 @@ class DataManager
     public function query($soql, $sobject)
     {
 
-        $job = new \JobInfo();
+        $job = new JobInfo();
         $job->setObject($sobject);
         $job->setOpertion('query');
-        $job->setContentType(\BulkApiClient::CSV);
+        $job->setContentType(BulkApiClient::CSV);
         $job->setConcurrencyMode('Parallel');
 
         $job = $this->client->createJob($job);
