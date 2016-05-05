@@ -1,18 +1,7 @@
 
 {
-    "name": "jcxk/salesforce-data-manager",
+    "name": "ofertix/salesforce-data-manager",
     "type": "library",
-    "license": "Apache-2.0",
-    "description": "Salesforce Data manager lib, wrapping bulkapliclient and soapclient",
-    "keywords": ["salesforce", "force"],
-    "minimum-stability": "dev",
-    "authors": [
-        {
-            "name": "juan carlos escamilla",
-            "homepage": "http://indev.com",
-            "role": "Developer"
-        }
-    ],
     "require": {
         "php": ">=5.3.9",
         "league/csv": "^8.0"
